@@ -1,0 +1,23 @@
+body {
+    background: aqua;
+}
+
+#container {
+    margin: auto;
+    background: lightgrey;
+    width: 360px;
+    border: 1px solid black;
+}
+
+h1 {
+    padding: 20px;
+}
+
+input {
+    margin: 20px;
+    padding: 5px;
+}
+
+li:nth-last-child(1) {
+    padding-bottom: 25px;
+}
