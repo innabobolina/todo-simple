@@ -2,6 +2,11 @@ body {
     background: aqua;
 }
 
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
 #container {
     margin: auto;
     background: lightgrey;
