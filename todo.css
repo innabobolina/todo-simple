@@ -1,28 +1,96 @@
-body {
-    background: aqua;
-}
-
 .completed {
-    color: gray;
+    color: darkgray;
     text-decoration: line-through;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    background: #4bc0c8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4bc0c8, #c779d0, #feac5e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #container {
-    margin: auto;
-    background: lightgrey;
+    margin: 100px auto;
+    background: #f7f7f7;
     width: 360px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    padding-left: 20px;
+    background: linear-gradient(purple, magenta);
+    /* background: lightseagreen; */
+    /* background: #4bc0c8; */
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 24px;
+    font-size: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fa-plus {
+    float: right;
 }
 
 input {
-    margin-left: 20px;
-    padding: 3px;
+    margin: 0;
+    padding: 13px 13px 13px 20px;
+    font-size: 18px;
+    background: #f7f7f7;
+    /* color: lightseagreen; */
+    color: purple;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
-li:nth-last-child(1) {
-    padding-bottom: 10px;
+input:focus {
+    background: white;
+    border: 3px solid purple;
+    outline: none;
 }
+
+ul {
+    list-style: none;
+    /* padding-left: 20px; */
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    background: red;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    width: 0;
+    margin-right: 20px;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li {
+    background: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+
+/* li:nth-last-child(1) {
+    padding-bottom: 10px;
+} */

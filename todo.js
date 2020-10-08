@@ -1,6 +1,6 @@
 // Cross-out and gray out a specific todo by clicking:
-
 $("ul").on("click", "li", function () {
+  // listens for all lis, including future ones
   $(this).toggleClass("completed");
 });
 // on (above) adds listeners for all potential
@@ -8,6 +8,7 @@ $("ul").on("click", "li", function () {
 // unlike click (below):
 
 // $("li").click(function () {
+//   // listens only for existing ones
 //   $(this).toggleClass("completed");
 // });
 
@@ -29,6 +30,10 @@ $("input[type='text']").keypress(function (event) {
     let todoText = $(this).val();
     $(this).val("");
     // create a new li and add to ul:
-    $("ul").append(`<li><span>X</span> ${todoText}</li>`);
+    $("ul").append(
+      `<li><span><i class="fas fa-trash-alt"></i></span> ${todoText}</li>`
+    );
   }
 });
+
+$(".fa-plus").click(() => $("input[type='text']").fadeToggle());
